@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrap {
+  margin:0;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  margin-top: 300px;
+}
+
+.circle {
+  margin: auto;
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border-top-color: yellow;
+  transform-style: preserve-3d;
+  animation: rotate 20s infinite linear;
+}
+
+.circle > div {
+  margin: 100px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  opacity: 0.9;
+  border: 4px solid black;
+  color: black;
+  transition: 0.5s ease-in;
+}
+
+.diameter1 {
+  transform: rotateY(45deg);
+}
+
+.diameter2 {
+  transform: rotateY(90deg);
+}
+
+.diameter3 {
+  transform: rotateY(135deg);
+}
+
+.diameter4 {
+  transform: rotateY(180deg);
+}
+
+.diameter5 {
+  transform: rotateY(225deg);
+}
+
+.diameter6 {
+  transform: rotateY(270deg);
+}
+
+.diameter7 {
+  transform: rotateY(315deg);
+}
+
+.diameter8 {
+  transform: rotateY(360deg);
+}
+
+.diameter9 {
+  transform: rotateX(45deg);
+}
+
+.diameter10 {
+  transform: rotateX(90deg);
+}
+
+.diameter11 {
+  transform: rotateX(135deg);
+}
+
+.diameter12 {
+  transform: rotateX(180deg);
+}
+
+.diameter13 {
+  transform: rotateX(225deg);
+}
+
+.diameter14 {
+  transform: rotateX(270deg);
+}
+
+.diameter15 {
+  transform: rotateX(315deg);
+}
+
+.diameter16 {
+  transform: rotateX(360deg);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.wrap:hover .diameter1 {
+  transform: translateZ(150px) translateY(-150px) rotateY(45deg);
+  border-color: blueviolet;
+}
+
+.wrap:hover .diameter2 {
+  transform: translateZ(150px) translateY(-150px) rotateY(90deg);
+  border-color: blueviolet;
+}
+
+.wrap:hover .diameter3 {
+  transform: translateZ(150px) translateY(-150px) rotateY(135deg);
+  border-color: blueviolet;
+}
+
+.wrap:hover .diameter4 {
+  transform: translateZ(150px) translateY(-150px) rotateY(180deg);
+  border-color: blueviolet;
+}
+
+.wrap:hover .diameter5 {
+  transform: translateZ(150px) translateY(150px) rotateY(45deg);
+  border-color: blue;
+}
+
+.wrap:hover .diameter6 {
+  transform: translateZ(150px) translateY(150px) rotateY(90deg);
+  border-color: blue;
+}
+
+.wrap:hover .diameter7 {
+  transform: translateZ(150px) translateY(150px) rotateY(135deg);
+  border-color: blue;
+}
+
+.wrap:hover .diameter8 {
+  transform: translateZ(150px) translateY(150px) rotateY(180deg);
+  border-color: blue;
+}
+
+.wrap:hover .diameter9 {
+  transform: translateZ(-150px) rotateY(45deg);
+  border-color: red;
+}
+
+.wrap:hover .diameter10 {
+  transform: translateZ(-150px) rotateY(90deg);
+  border-color: red;
+}
+
+.wrap:hover .diameter11 {
+  transform: translateZ(-150px) rotateY(135deg);
+  border-color: red;
+}
+
+.wrap:hover .diameter12 {
+  transform: translateZ(-150px) rotateY(180deg);
+  border-color: red;
+}
+
+ .wrap:hover .diameter13 {
+  transform: translateZ(-150px) translateY(300px) rotateY(45deg);
+  border-color: green;
+}
+
+.wrap:hover .diameter14 {
+  transform: translateZ(-150px) translateY(300px) rotateY(90deg);
+  border-color: green;
+}
+
+.wrap:hover .diameter15 {
+  transform: translateZ(-150px) translateY(300px) rotateY(135deg);
+  border-color: green;
+}
+
+.wrap:hover .diameter16 {
+  transform: translateZ(-150px) translateY(300px) rotateY(180deg);
+  border-color: green;
+}
+
+.wrap:hover .diameter17 {
+  transform: rotateY(45deg);
+}
+
+.wrap:hover .diameter18 {
+  transform: rotateY(90deg);
+}
+
+.wrap:hover .diameter19 {
+  transform: rotateY(135deg);
+}
+
+.wrap:hover .diameter20 {
+  transform: rotateY(180deg);
+}
+
